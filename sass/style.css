@@ -154,6 +154,132 @@ nav {
     transform: none;
   }
 }
+.transform {
+  width: 50%;
+  margin: 0 auto;
+}
+.transform h2 {
+  text-align: center;
+}
+.transform__translate {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(84, 83, 83);
+  color: white;
+  border: 2px solid black;
+  margin: 5px 50px;
+  padding: 15px;
+  transform: translate(30px, 15px);
+}
+.transform__scale {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(84, 83, 83);
+  color: white;
+  border: 2px solid black;
+  margin: 5px 50px;
+  padding: 15px;
+}
+.transform__rotate {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(84, 83, 83);
+  color: white;
+  border: 2px solid black;
+  margin: 5px 50px;
+  padding: 15px;
+}
+.transform__rotateX {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(84, 83, 83);
+  color: white;
+  border: 2px solid black;
+  margin: 5px 50px;
+  padding: 15px;
+}
+.transform__rotateY {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(84, 83, 83);
+  color: white;
+  border: 2px solid black;
+  margin: 5px 50px;
+  padding: 15px;
+}
+.transform__rotateZ {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(84, 83, 83);
+  color: white;
+  border: 2px solid black;
+  margin: 5px 50px;
+  padding: 15px;
+}
+.transform__scale {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(84, 83, 83);
+  color: white;
+  border: 2px solid black;
+  margin: 5px 50px;
+  padding: 15px;
+}
+.transform__scaleX {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(84, 83, 83);
+  color: white;
+  border: 2px solid black;
+  margin: 5px 50px;
+  padding: 15px;
+}
+.transform__scaleY {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(84, 83, 83);
+  color: white;
+  border: 2px solid black;
+  margin: 5px 50px;
+  padding: 15px;
+}
+.transform__skew {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(84, 83, 83);
+  color: white;
+  border: 2px solid black;
+  margin: 5px 50px;
+  padding: 15px;
+}
+.transform__skewX {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(84, 83, 83);
+  color: white;
+  border: 2px solid black;
+  margin: 5px 50px;
+  padding: 15px;
+}
+.transform__skewY {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(84, 83, 83);
+  color: white;
+  border: 2px solid black;
+  margin: 5px 50px;
+  padding: 15px;
+}
+.transform__matrix {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(84, 83, 83);
+  color: white;
+  border: 2px solid black;
+  margin: 5px 50px;
+  padding: 15px;
+}
+
 span.property {
   color: rgb(198, 34, 94);
   background-color: rgb(196, 196, 196);

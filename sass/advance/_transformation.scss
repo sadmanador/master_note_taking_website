@@ -1,0 +1,71 @@
+@mixin transformStyle {
+    width: 400px;
+    height: 200px;
+    background-color: rgb(84, 83, 83);
+    color: white;
+    border: 2px solid black;
+    margin: 5px 50px;
+    padding: 15px;
+}
+
+.transform {
+    width: 50%;
+    margin: 0 auto;
+
+    h2 {
+        text-align: center;
+    }
+
+    &__translate {
+        @include transformStyle;
+        transform: translate(30px, 15px)
+    }
+
+    &__scale {
+        @include transformStyle;
+    }
+    
+    &__rotate {
+        @include transformStyle;
+    }
+
+    &__rotateX {
+        @include transformStyle;
+    }
+
+    &__rotateY {
+        @include transformStyle;
+    }
+
+    &__rotateZ {
+        @include transformStyle;
+    }
+
+    &__scale {
+        @include transformStyle;
+    }
+
+    &__scaleX {
+        @include transformStyle;
+    }
+
+    &__scaleY {
+        @include transformStyle;
+    }
+
+    &__skew {
+        @include transformStyle;
+    }
+
+    &__skewX {
+        @include transformStyle;
+    }
+
+    &__skewY {
+        @include transformStyle;
+    }
+
+    &__matrix {
+        @include transformStyle;
+    }
+}
