@@ -161,6 +161,13 @@ nav {
 .transform h2 {
   text-align: center;
 }
+.transform__origin {
+  background-color: rgba(255, 0, 0, 0.3);
+  width: 400px;
+  height: 200px;
+  border: 2px solid black;
+  margin: 5px 50px;
+}
 .transform__translate {
   width: 400px;
   height: 200px;

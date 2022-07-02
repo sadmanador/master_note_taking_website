@@ -16,6 +16,14 @@
         text-align: center;
     }
 
+    &__origin {
+        background-color: rgba(255, 0, 0, .3);
+        width: 400px;
+        height: 200px;
+        border: 2px solid black;
+        margin: 5px 50px;
+    }
+
     &__translate {
         @include transformStyle;
         transform: translate(30px, 15px)
