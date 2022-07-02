@@ -4,7 +4,6 @@
     background-color: rgb(84, 83, 83);
     color: white;
     border: 2px solid black;
-    margin: 5px 50px;
     padding: 15px;
 }
 
@@ -21,12 +20,12 @@
         width: 400px;
         height: 200px;
         border: 2px solid black;
-        margin: 5px 50px;
+        margin-bottom: 50px;
     }
 
     &__translate {
         @include transformStyle;
-        transform: translate(30px, 15px)
+        transform: translate(50px, 20px)
     }
 
     &__scale {
