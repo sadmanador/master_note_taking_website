@@ -20,7 +20,7 @@
         width: 400px;
         height: 200px;
         border: 2px solid black;
-        margin-bottom: 50px;
+        margin-bottom: 150px;
     }
 
     &__translate {
@@ -28,48 +28,54 @@
         transform: translate(50px, 20px)
     }
 
-    &__scale {
-        @include transformStyle;
-    }
-    
     &__rotate {
         @include transformStyle;
+        transform: rotate(15deg)
     }
 
     &__rotateX {
         @include transformStyle;
+        transform: rotateX(60deg);
     }
 
     &__rotateY {
         @include transformStyle;
+        transform: rotateY(75deg);
     }
 
     &__rotateZ {
         @include transformStyle;
+        transform: rotateZ(-5deg);
     }
 
     &__scale {
         @include transformStyle;
+        transform: scale(.75, .75);
     }
 
     &__scaleX {
         @include transformStyle;
+        transform: scaleX(.7);
     }
 
     &__scaleY {
         @include transformStyle;
+        transform: scaleY(.7);
     }
 
     &__skew {
         @include transformStyle;
+        transform: skew(20deg, 15deg)
     }
 
     &__skewX {
         @include transformStyle;
+        transform: skewX(20deg)
     }
 
     &__skewY {
         @include transformStyle;
+        transform: skewY(15deg)
     }
 
     &__matrix {
