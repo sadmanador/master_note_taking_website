@@ -396,7 +396,33 @@ nav {
   border-top: 3px solid black;
 }
 .transition__transformation:hover {
-  transform: rotate(360deg) scale(1.2, 1.2) translate(200px, 0);
+  transform: rotate(360deg) translate(200px, 0);
+}
+.transition__individual {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 1s;
+  text-overflow: clip;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.transition__individual:hover {
+  width: 300px;
+}
+.transition__shorthand {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  transition: width 2s ease-out 1s;
+}
+.transition__shorthand:hover {
+  width: 300px;
 }
 
 span.property {

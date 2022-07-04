@@ -115,6 +115,30 @@
     }
 
     &__transformation:hover {
-        transform: rotate(360deg) scale(1.2, 1.2) translate(200px, 0);
+        transform: rotate(360deg) translate(200px, 0);
+    }
+
+    &__individual {
+        @include transitionStyle;
+        transition-property: width;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 1s;
+        text-overflow: clip;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    &__individual:hover {
+        width: 300px;
+    }
+
+    &__shorthand {
+        @include transitionStyle;
+        transition: width 2s ease-out 1s;
+    }
+
+    &__shorthand:hover {
+        width: 300px;
     }
 }
