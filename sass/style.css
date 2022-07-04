@@ -393,9 +393,10 @@ nav {
   background-color: red;
   color: white;
   transition: transform 2.5s;
+  border-top: 3px solid black;
 }
 .transition__transformation:hover {
-  transform: rotate(360deg) scale(1.2, 1.2);
+  transform: rotate(360deg) scale(1.2, 1.2) translate(200px, 0);
 }
 
 span.property {

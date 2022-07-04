@@ -111,9 +111,10 @@
     &__transformation {
         @include transitionStyle;
         transition: transform 2.5s;
+        border-top: 3px solid black;
     }
 
     &__transformation:hover {
-        transform: rotate(360deg) scale(1.2, 1.2);
+        transform: rotate(360deg) scale(1.2, 1.2) translate(200px, 0);
     }
 }
