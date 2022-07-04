@@ -276,6 +276,10 @@ nav {
   padding: 15px;
 }
 
+.transition {
+  width: 50%;
+  margin: 0 auto;
+}
 .transition div {
   margin-bottom: 20px;
 }
@@ -305,6 +309,93 @@ nav {
   height: 200px;
   background-color: blue;
   overflow: visible;
+}
+.transition__ease {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  transition: width 5s;
+  transition-timing-function: ease;
+}
+.transition__ease:hover {
+  width: 300px;
+}
+.transition__linear {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  transition: width 5s;
+  transition-timing-function: linear;
+}
+.transition__linear:hover {
+  width: 300px;
+}
+.transition__ease-in {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  transition: width 5s;
+  transition-timing-function: ease-in;
+}
+.transition__ease-in:hover {
+  width: 300px;
+}
+.transition__ease-out {
+  transition: width 5s;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  transition-timing-function: ease-out;
+}
+.transition__ease-out:hover {
+  width: 300px;
+}
+.transition__ease-in-out {
+  transition: width 5s;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  transition-timing-function: ease-in-out;
+}
+.transition__ease-in-out:hover {
+  width: 300px;
+}
+.transition__cubic-bezier {
+  transition: width 5s;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.transition__cubic-bezier:hover {
+  width: 300px;
+}
+.transition__delay {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  transition: width 3s;
+  transition-delay: 1s;
+}
+.transition__delay:hover {
+  width: 300px;
+}
+.transition__transformation {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  transition: transform 2.5s;
+}
+.transition__transformation:hover {
+  transform: rotate(360deg) scale(1.2, 1.2);
 }
 
 span.property {

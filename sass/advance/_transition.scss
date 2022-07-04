@@ -6,6 +6,9 @@
 }
 
 .transition {
+    width: 50%;
+    margin: 0 auto;
+
     div {
         margin-bottom: 20px;
     }
@@ -35,5 +38,82 @@
         overflow: visible;
     }
 
-    &__
+    &__ease {
+        @include transitionStyle;
+        transition: width 5s;
+        transition-timing-function: ease;
+    }
+
+    &__ease:hover {
+        width: 300px;
+    }
+
+    &__linear {
+        @include transitionStyle;
+        transition: width 5s;
+        transition-timing-function: linear;
+    }
+    
+    &__linear:hover {
+        width: 300px;
+    }
+
+    &__ease-in {
+        @include transitionStyle;
+        transition: width 5s;
+        transition-timing-function: ease-in;
+    }
+
+    &__ease-in:hover {
+        width: 300px;
+    }
+
+    &__ease-out {
+        transition: width 5s;
+        @include transitionStyle;
+        transition-timing-function: ease-out;
+    }
+
+    &__ease-out:hover {
+        width: 300px;
+    }
+
+    &__ease-in-out {
+        transition: width 5s;
+        @include transitionStyle;
+        transition-timing-function: ease-in-out;
+    }
+
+    &__ease-in-out:hover {
+        width: 300px;
+    }
+
+    &__cubic-bezier {
+        transition: width 5s;
+        @include transitionStyle;
+        transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    &__cubic-bezier:hover {
+        width: 300px;
+    }
+
+    &__delay {
+        @include transitionStyle;
+        transition: width 3s;
+        transition-delay: 1s;
+    }
+
+    &__delay:hover {
+        width: 300px;
+    }
+
+    &__transformation {
+        @include transitionStyle;
+        transition: transform 2.5s;
+    }
+
+    &__transformation:hover {
+        transform: rotate(360deg) scale(1.2, 1.2);
+    }
 }
