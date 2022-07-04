@@ -80,5 +80,12 @@
 
     &__matrix {
         @include transformStyle;
+        transform: matrix(1, -0.3, 0, 1, 0, 0);
+        word-break: break-all;
+    }
+
+    &__multiple-transformation {
+        @include transformStyle;
+        transform: translate(50px, 70px) rotate(45deg) scale(1.2, 1.2);
     }
 }

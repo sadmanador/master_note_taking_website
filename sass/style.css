@@ -274,6 +274,17 @@ nav {
   color: white;
   border: 2px solid black;
   padding: 15px;
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+  word-break: break-all;
+}
+.transform__multiple-transformation {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(84, 83, 83);
+  color: white;
+  border: 2px solid black;
+  padding: 15px;
+  transform: translate(50px, 70px) rotate(45deg) scale(1.2, 1.2);
 }
 
 .transition {
