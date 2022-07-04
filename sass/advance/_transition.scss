@@ -115,7 +115,7 @@
     }
 
     &__transformation:hover {
-        transform: rotate(360deg) translate(200px, 0);
+        transform: rotateY(360deg) translate(200px, 0);
     }
 
     &__individual {

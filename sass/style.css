@@ -407,7 +407,7 @@ nav {
   border-top: 3px solid black;
 }
 .transition__transformation:hover {
-  transform: rotate(360deg) translate(200px, 0);
+  transform: rotateY(360deg) translate(200px, 0);
 }
 .transition__individual {
   width: 100px;
