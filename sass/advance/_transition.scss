@@ -2,8 +2,38 @@
     width: 100px;
     height: 100px;
     background-color: red;
+    color: white;
 }
 
 .transition {
-    
+    div {
+        margin-bottom: 20px;
+    }
+
+    &__width {
+        @include transitionStyle;
+        transition: width 2s;
+    }
+
+    &__width:hover {
+        width: 300px;
+    }
+
+    &__width-height {
+        @include transitionStyle;
+        transition: width 2s, height 3s, background-color 4s;
+        text-overflow: clip;
+        overflow: hidden;
+        white-space: nowrap;
+        color: rgb(71, 71, 71);
+    }
+
+    &__width-height:hover {
+        width: 300px;
+        height: 200px;
+        background-color: blue;
+        overflow: visible;
+    }
+
+    &__
 }
