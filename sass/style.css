@@ -541,6 +541,44 @@ nav {
     top: 0;
   }
 }
+@-webkit-keyframes timing-function {
+  0% {
+    background-color: red;
+    left: 0;
+    top: 0;
+  }
+  50% {
+    background-color: blue;
+    left: 400px;
+    top: 0;
+  }
+  100% {
+    background-color: green;
+    left: 0px;
+    top: 0;
+  }
+}
+@keyframes timing-function {
+  0% {
+    background-color: red;
+    left: 0;
+    top: 0;
+  }
+  50% {
+    background-color: blue;
+    left: 400px;
+    top: 0;
+  }
+  100% {
+    background-color: green;
+    left: 0px;
+    top: 0;
+  }
+}
+[class*=tf-] {
+  margin-bottom: 10px;
+}
+
 .animation__background-color {
   width: 100px;
   height: 100px;
@@ -560,7 +598,7 @@ nav {
           animation-duration: 10s;
 }
 .animation__box {
-  height: 600px;
+  height: 550px;
 }
 .animation__multiple-property {
   width: 100px;
@@ -583,6 +621,180 @@ nav {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
   position: relative;
+}
+.animation__negative-delay {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-name: multi-property;
+          animation-name: multi-property;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  position: relative;
+}
+.animation__iteration-count {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-name: multi-property;
+          animation-name: multi-property;
+  position: relative;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+}
+.animation__infinite {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-name: multi-property;
+          animation-name: multi-property;
+  position: relative;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.animation__direction-normal {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-name: multi-property;
+          animation-name: multi-property;
+  position: relative;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+.animation__direction-reverse {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-name: multi-property;
+          animation-name: multi-property;
+  position: relative;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+.animation__direction-alternate {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-name: multi-property;
+          animation-name: multi-property;
+  position: relative;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.animation__direction-alternate-reverse {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-name: multi-property;
+          animation-name: multi-property;
+  position: relative;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.animation__tf-ease {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-name: timing-function;
+          animation-name: timing-function;
+  position: relative;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+.animation__tf-linear {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-name: timing-function;
+          animation-name: timing-function;
+  position: relative;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.animation__tf-ease-in {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-name: timing-function;
+          animation-name: timing-function;
+  position: relative;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+.animation__tf-ease-out {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-name: timing-function;
+          animation-name: timing-function;
+  position: relative;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+.animation__tf-ease-in-out {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-name: timing-function;
+          animation-name: timing-function;
+  position: relative;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+.animation__tf-cubic-bezier {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-name: timing-function;
+          animation-name: timing-function;
+  position: relative;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+          animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
 span.property {

@@ -25,6 +25,16 @@
     100% { background-color: purple; left: 0; top: 0;}
 }
 
+@keyframes timing-function {
+    0% { background-color: red; left:0; top: 0;}
+    50% { background-color: blue; left:400px; top: 0;}
+    100% { background-color: green; left:0px; top: 0;}
+}
+
+[class*="tf-"] {
+    margin-bottom: 10px;
+}
+
 
 .animation {
 
@@ -40,7 +50,7 @@
         animation-duration: 10s;
     }
 
-    &__box { height: 600px}
+    &__box { height: 550px}
 
     &__multiple-property {
         @include animationStyle;
@@ -56,4 +66,122 @@
         animation-delay: 2s;
         position: relative;
     }
+
+    &__negative-delay {
+        @include animationStyle;
+        animation-duration: 10s;
+        animation-name: multi-property;
+        animation-delay: -2s;
+        position: relative;
+    }
+
+    &__iteration-count {
+        @include animationStyle;
+        animation-duration: 10s;
+        animation-name: multi-property;
+        position: relative;
+        animation-iteration-count: 3;
+    }
+
+    &__infinite {
+        @include animationStyle;
+        animation-duration: 10s;
+        animation-name: multi-property;
+        position: relative;
+        animation-iteration-count: infinite;
+    }
+
+    &__direction-normal {
+        @include animationStyle;
+        animation-duration: 10s;
+        animation-name: multi-property;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+    }
+
+    &__direction-reverse {
+        @include animationStyle;
+        animation-duration: 10s;
+        animation-name: multi-property;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+    }
+
+    &__direction-alternate {
+        @include animationStyle;
+        animation-duration: 10s;
+        animation-name: multi-property;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    &__direction-alternate-reverse {
+        @include animationStyle;
+        animation-duration: 10s;
+        animation-name: multi-property;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+
+    &__tf-ease {
+        @include animationStyle;
+        animation-duration: 10s;
+        animation-name: timing-function;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+    }
+
+    &__tf-linear {
+        @include animationStyle;
+        animation-duration: 10s;
+        animation-name: timing-function;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    &__tf-ease-in {
+        @include animationStyle;
+        animation-duration: 10s;
+        animation-name: timing-function;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+    }
+
+    &__tf-ease-out {
+        @include animationStyle;
+        animation-duration: 10s;
+        animation-name: timing-function;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+
+    &__tf-ease-in-out {
+        @include animationStyle;
+        animation-duration: 10s;
+        animation-name: timing-function;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    &__tf-cubic-bezier {
+        @include animationStyle;
+        animation-duration: 10s;
+        animation-name: timing-function;
+        position: relative;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(.17,.67,.83,.67);
+    }
+
+
+
+
 }
