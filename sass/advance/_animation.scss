@@ -181,7 +181,52 @@
         animation-timing-function: cubic-bezier(.17,.67,.83,.67);
     }
 
+    &__fill-mode-none {
+        @include animationStyle;
+        animation-duration: 10s;
+        animation-name: timing-function;
+        position: relative;
+        animation-fill-mode: none;
+    }
 
+    &__fill-mode-forwards {
+        @include animationStyle;
+        animation-duration: 10s;
+        animation-name: timing-function;
+        position: relative;
+        animation-fill-mode: forwards;
+    }
 
+    &__fill-mode-backwards {
+        @include animationStyle;
+        animation-duration: 10s;
+        animation-name: timing-function;
+        position: relative;
+        animation-fill-mode: backwards;
+    }
 
+    &__fill-mode-both {
+        @include animationStyle;
+        animation-duration: 10s;
+        animation-name: timing-function;
+        position: relative;
+        animation-fill-mode: both;
+    }
+
+    &__order {
+        @include animationStyle;
+        position: relative;
+        animation-name: timing-function;
+        animation-duration: 5s;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 3;
+        animation-direction: alternate-reverse;
+    }
+
+    &__shorthand {
+        @include animationStyle;
+        position: relative;
+        animation: timing-function 4s ease-in 2s infinite reverse;
+    }
 }
