@@ -883,4 +883,17 @@ li > span.property {
 
 code pre {
   color: rgb(194, 194, 194);
+}
+
+.all-button .btn {
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  padding: 16px 32px;
+  font-size: 16px;
+  margin: 0 15px;
+  color: white;
+  background-color: green;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
